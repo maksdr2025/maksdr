@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ДНЮХА МАКСА)</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .swiper {
+            width: 90%;
+            max-width: 800px;
+            height: 500px;
+            margin-bottom: 20px;
+        }
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+        #qrcode-container {
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #open-link {
+            margin-top: 10px;
+            padding: 8px 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        #open-link:hover {
+            background-color: #0056b3;
+        }
+        @media (max-width: 600px) {
+            .swiper {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>С ДР МАКС БРООООО!</h1>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/1.jpg" alt="Фото 1"></div>
+            <div class="swiper-slide"><img src="img/2.jpg" alt="Фото 2"></div>
+            <div class="swiper-slide"><img src="img/3.jpg" alt="Фото 3"></div>
+            <div class="swiper-slide"><img src="img/4.jpg" alt="Фото 4"></div>
+            <div class="swiper-slide"><img src="img/5.jpg" alt="Фото 5"></div>
+            <div class="swiper-slide"><img src="img/6.jpg" alt="Фото 6"></div>
+            <div class="swiper-slide"><img src="img/7.jpg" alt="Фото 7"></div>
+            <div class="swiper-slide"><img src="img/8.jpg" alt="Фото 8"></div>
+            <div class="swiper-slide"><img src="img/9.jpg" alt="Фото 9"></div>
+            <div class="swiper-slide"><img src="img/10.jpg" alt="Фото 10"></div>
+            <div class="swiper-slide"><img src="img/11.jpg" alt="Фото 11"></div>
+            <div class="swiper-slide"><img src="img/12.jpg" alt="Фото 12"></div>
+            <div class="swiper-slide"><img src="img/13.jpg" alt="Фото 13"></div>
+            <div class="swiper-slide"><img src="img/14.jpg" alt="Фото 14"></div>
+            <div class="swiper-slide"><img src="img/15.jpg" alt="Фото 15"></div>
+            <div class="swiper-slide"><img src="img/16.jpg" alt="Фото 16"></div>
+            <div class="swiper-slide"><img src="img/17.jpg" alt="Фото 17"></div>
+            <div class="swiper-slide"><img src="img/18.jpg" alt="Фото 18"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    
+    <div id="qrcode-container">
+        <a id="qr-link" href="https://example.com" target="_blank">
+            <canvas id="qrcode"></canvas>
+        </a>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/qrious"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            pagination: { el: '.swiper-pagination', clickable: true },
+            navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+            autoplay: { delay: 5000 },
+        });
+        
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'ArrowRight') {
+                swiper.slideNext();
+            } else if (event.key === 'ArrowLeft') {
+                swiper.slidePrev();
+            }
+        });
+        
+        const qrValue = 'https://str-27.filestore.app/a39a423318cdc/98f5fc4ffd0ef/alternative_resolution_bf5ea9556d8ca_360p.mp4?temp_url_expires=1742864843&temp_url_id=f8b4b24e-c066-432f-9e67-55335527bbe8&countable=true&filename=Scatlesbi_Alma-Asha-New-Yezz.mp4&inline=true&content_type=video%2Fmp4&concurrency=32&rate_limit=0&response_limit=5595000&ip_access_policy=everyone&tags=file_type%3Avideo_360p%2Caction%3Alimited_view%2Cproject%3Apartner%2Cowner_id%3A98437%2Csite_owner_id%3A98437%2Csize%3A585254016%2Cfile_id%3A3a10aed7a00af%2Csite_id%3A12620%2Cuser_pc_id%3A8b701b12312c1%2Cis_partner_side%3Atrue%2Ccts%3A1742778443%2Cdevice_type%3A%2Cuser_os%3AAndroid%2Cuser_file_id%3A3a10aed7a00af%2Cuser_id%3A&temp_url_issuer=5445f78a91de707b297e67ed&temp_url_sig=0b4ea91d51a5597c23816e44e07451cc5bb025f16753b9da7eae1b66527d17477840289c88f4e1e5fb315a526f3abdb219497ad3731e6d4be9a445f323744838&client_ip=';
+        document.getElementById('qr-link').href = qrValue;
+        
+        new QRious({
+            element: document.getElementById('qrcode'),
+            value: qrValue,
+            size: 250
+        });
+    </script>
+</body>
+</html>
